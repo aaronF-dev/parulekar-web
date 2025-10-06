@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Beige & Dark Brown Design System - Elegant & Warm */
+    
+    /* Core Colors - Soft Beige Background */
+    --background: 40 30% 94%;
+    --foreground: 30 25% 15%;
+
+    --card: 38 35% 98%;
+    --card-foreground: 30 25% 15%;
+
+    --popover: 38 35% 98%;
+    --popover-foreground: 30 25% 15%;
+
+    /* Primary - Rich Dark Brown */
+    --primary: 25 40% 30%;
+    --primary-foreground: 40 35% 96%;
+    --primary-light: 25 35% 40%;
+    --primary-dark: 25 45% 20%;
+
+    /* Secondary - Warm Beige */
+    --secondary: 38 45% 75%;
+    --secondary-foreground: 30 25% 15%;
+    --secondary-light: 38 50% 82%;
+    --secondary-dark: 38 40% 65%;
+
+    /* Accent - Golden Brown */
+    --accent: 35 55% 50%;
+    --accent-foreground: 40 35% 96%;
+    --accent-light: 35 60% 60%;
+    --accent-dark: 35 50% 40%;
+
+    /* Success - Warm Olive Green */
+    --success: 80 30% 45%;
+    --success-light: 80 35% 55%;
+
+    /* Info - Soft Tan */
+    --info: 42 40% 60%;
+    --info-light: 42 45% 70%;
+
+    /* Dark Section - Deep Dark Brown */
+    --dark: 25 45% 18%;
+    --dark-foreground: 40 35% 96%;
+
+    /* Muted - Light Beige/Cream */
+    --muted: 40 25% 88%;
+    --muted-foreground: 30 20% 40%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 40 35% 96%;
+
+    --border: 38 25% 85%;
+    --input: 38 25% 88%;
+    --ring: 25 40% 30%;
+
+    --radius: 1.5rem;
+
+    /* Gradients - Warm & Elegant */
+    --gradient-hero: linear-gradient(135deg, hsl(40 30% 94%) 0%, hsl(38 35% 90%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(35 55% 50%) 0%, hsl(35 50% 40%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(38 45% 75%) 0%, hsl(38 40% 65%) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(40 30% 94%) 0%, hsl(38 35% 90%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(38 35% 98%) 0%, hsl(40 30% 96%) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(25 45% 18%) 0%, hsl(25 40% 22%) 100%);
+    
+    /* Shadows - Soft & Natural with Brown Tones */
+    --shadow-sm: 0 2px 8px hsl(30 25% 15% / 0.08);
+    --shadow-md: 0 4px 16px hsl(30 25% 15% / 0.1);
+    --shadow-lg: 0 8px 32px hsl(30 25% 15% / 0.12);
+    --shadow-xl: 0 12px 48px hsl(30 25% 15% / 0.15);
+    --shadow-glow: 0 0 40px hsl(35 55% 50% / 0.25);
+    --shadow-colored: 0 8px 24px hsl(35 55% 50% / 0.2);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-spring: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
