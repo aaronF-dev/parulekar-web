@@ -16,7 +16,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-background pt-4 md:pt-6">
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-background pt-16 sm:pt-20 md:pt-6">
       {/* Floating Decorative Elements - Hidden on mobile */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:block">
         <div className="absolute top-48 right-[15%] w-10 md:w-12 h-10 md:h-12 bg-accent rounded-full opacity-70 animate-bounce"></div>
@@ -32,41 +32,48 @@ const HeroSection = () => {
         </svg>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20 grid lg:grid-cols-2 gap-8 md:gap-12 items-center relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16 lg:py-20 grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center relative z-10">
         {/* Left Content */}
         <div 
           ref={leftRef}
-          className={`space-y-6 md:space-y-8 transition-all duration-1000 ${
+          className={`space-y-4 sm:space-y-6 md:space-y-8 transition-all duration-1000 ${
             leftVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
           {/* School Logo */}
           <div className="flex justify-center md:justify-start mb-2">
-            <img src={schoolLogo} alt="School Logo" className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 object-contain" />
+            <img 
+              src={schoolLogo} 
+              alt="School Logo" 
+              loading="eager"
+              className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain" 
+            />
           </div>
 
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight">
+          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight text-center md:text-left">
             {t('hero.schoolName')}
           </h1>
           
-          <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-xl mx-auto md:mx-0 text-center md:text-left">
             {t('hero.tagline')}
           </p>
 
-          <Button
-            onClick={scrollToContact}
-            size="lg"
-            className="bg-primary hover:bg-primary-dark text-primary-foreground font-semibold text-base md:text-lg px-8 md:px-10 py-5 md:py-7 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all w-full sm:w-auto"
-          >
-            {t('hero.learnMore')}
-            <ArrowRight className="ml-2" size={20} />
-          </Button>
+          <div className="flex justify-center md:justify-start">
+            <Button
+              onClick={scrollToContact}
+              size="lg"
+              className="bg-primary hover:bg-primary-dark text-primary-foreground font-semibold text-sm sm:text-base md:text-lg px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-7 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all w-full sm:w-auto max-w-xs"
+            >
+              {t('hero.learnMore')}
+              <ArrowRight className="ml-2" size={18} />
+            </Button>
+          </div>
         </div>
 
         {/* Right Content - Image with Decorative Elements */}
         <div 
           ref={rightRef}
-          className={`relative mt-8 lg:mt-0 transition-all duration-1000 delay-200 ${
+          className={`relative mt-6 lg:mt-0 transition-all duration-1000 delay-200 ${
             rightVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
           }`}
         >
@@ -77,11 +84,12 @@ const HeroSection = () => {
           <div className="hidden md:block absolute bottom-0 left-0 w-32 sm:w-40 md:w-48 h-32 sm:h-40 md:h-48 bg-secondary rounded-xl md:rounded-[2rem] rotate-12"></div>
           
           {/* Main Image Container */}
-          <div className="relative bg-white rounded-2xl md:rounded-[3rem] overflow-hidden shadow-xl p-2 sm:p-3 md:p-4">
+          <div className="relative bg-white rounded-xl sm:rounded-2xl md:rounded-[3rem] overflow-hidden shadow-lg md:shadow-xl p-2 sm:p-3 md:p-4">
             <img 
               src="https://ik.imagekit.io/73ht4flyu/hero2.png?updatedAt=1759650210706" 
               alt={t('hero.imageAlt')}
-              className="w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] object-cover rounded-xl md:rounded-[2.5rem]"
+              loading="eager"
+              className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[450px] xl:h-[500px] object-cover rounded-lg sm:rounded-xl md:rounded-[2.5rem]"
             />
           </div>
           

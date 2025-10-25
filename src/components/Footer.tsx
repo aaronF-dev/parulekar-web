@@ -53,27 +53,38 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Legal & Copyright */}
+          {/* Attribution & Copyright */}
           <div>
-            <h3 className="font-serif font-bold text-base sm:text-lg mb-3 md:mb-4">Legal</h3>
-            <p className="text-primary-foreground/60 text-xs sm:text-sm mb-3">
+            <h3 className="font-serif font-bold text-base sm:text-lg mb-3 md:mb-4">About</h3>
+            <p className="text-primary-foreground/60 text-xs sm:text-sm mb-4">
               © {currentYear} {t('footer.copyright')}
             </p>
             <ul className="space-y-2">
               <li>
-                <button className="text-primary-foreground/80 hover:text-accent-foreground transition-colors text-sm sm:text-base">
-                  {t('footer.privacy')}
-                </button>
+                <a 
+                  href="https://topiwala-mes.org" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary-foreground/80 hover:text-accent-foreground transition-colors text-sm sm:text-base flex items-center gap-1"
+                >
+                  Brought to you by Malvan Education Society
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               </li>
               <li>
-                <button className="text-primary-foreground/80 hover:text-accent-foreground transition-colors text-sm sm:text-base">
-                  {t('footer.terms')}
-                </button>
-              </li>
-              <li>
-                <button className="text-primary-foreground/80 hover:text-accent-foreground transition-colors text-sm sm:text-base">
-                  {t('footer.cookies')}
-                </button>
+                <a 
+                  href="https://team-knowvation.vercel.app" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary-foreground/80 hover:text-accent-foreground transition-colors text-sm sm:text-base flex items-center gap-1"
+                >
+                  Developed by Knowvation
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>

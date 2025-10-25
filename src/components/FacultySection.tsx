@@ -92,7 +92,12 @@ const FacultySection = () => {
               >
                 <CardContent className="p-4 sm:p-5 md:p-6">
                   <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-lg md:rounded-xl mx-auto mb-3 md:mb-4 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform overflow-hidden">
-                    <img src={member.image} alt={t(`faculty.members.${member.memberKey}.name`)} className="w-full h-full object-cover" />
+                    <img 
+                      src={member.image} 
+                      alt={t(`faculty.members.${member.memberKey}.name`)} 
+                      loading="lazy"
+                      className="w-full h-full object-cover" 
+                    />
                   </div>
                   <h3 className="font-serif text-lg sm:text-xl font-bold text-foreground mb-2">
                     {t(`faculty.members.${member.memberKey}.name`)}

@@ -26,7 +26,12 @@ const AboutSection = () => {
             <div className="hidden md:block absolute -bottom-6 md:-bottom-8 -left-6 md:-left-8 w-56 md:w-72 h-56 md:h-72 bg-primary rounded-2xl md:rounded-[3rem] rotate-12"></div>
             <div className="hidden md:block absolute -top-6 md:-top-8 -right-6 md:-right-8 w-40 md:w-48 h-40 md:h-48 bg-secondary rounded-xl md:rounded-[2rem] -rotate-12"></div>
             <div className="relative bg-white rounded-2xl md:rounded-[3rem] overflow-hidden shadow-xl p-3 md:p-4">
-              <img src={aboutImage} alt={t('about.imageAlt')} className="w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] object-cover rounded-xl md:rounded-[2.5rem]" />
+              <img 
+                src={aboutImage} 
+                alt={t('about.imageAlt')} 
+                loading="lazy"
+                className="w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] object-cover rounded-xl md:rounded-[2.5rem]" 
+              />
             </div>
           </div>
 

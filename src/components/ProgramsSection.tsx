@@ -64,6 +64,7 @@ const ProgramsSection = () => {
                   <img 
                     src={program.image} 
                     alt={t(program.titleKey)}
+                    loading="lazy"
                     className="w-full h-48 sm:h-56 md:h-64 object-cover rounded-xl md:rounded-[2.5rem]"
                   />
                 </div>
