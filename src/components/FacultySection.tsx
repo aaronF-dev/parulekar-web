@@ -2,9 +2,11 @@ import { useInView } from 'react-intersection-observer';
 import { GraduationCap, Award, Star } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import veenaGosavi from '@/assets/staff-veena-gosavi.jpg';
-import staffPlaceholder from '@/assets/staff-placeholder.png';
+import shraddhaChavan from '@/assets/staff-shraddha-chavan.jpg';
 import nilimaKulkarni from '@/assets/staff-nilima-kulkarni.jpg';
+import sukhadhaKhanolkar from '@/assets/staff-sukhadha-khanolkar.jpg';
 import satishBansode from '@/assets/staff-satish-bansode.jpg';
+import poonamYadav from '@/assets/staff-poonam-yadav.jpg';
 import rakhiMalvankar from '@/assets/staff-rakhi-malvankar.jpg';
 import sakshiBandivadekar from '@/assets/staff-sakshi-bandivadekar.jpg';
 import akshaySatardekar from '@/assets/staff-akshay-satardekar.jpg';
@@ -19,11 +21,11 @@ const FacultySection = () => {
 
   const faculty = [
     { memberKey: 'veena', image: veenaGosavi },
-    { memberKey: 'shraddha', image: staffPlaceholder },
+    { memberKey: 'shraddha', image: shraddhaChavan },
     { memberKey: 'nilima', image: nilimaKulkarni },
-    { memberKey: 'sukhadha', image: staffPlaceholder },
+    { memberKey: 'sukhadha', image: sukhadhaKhanolkar },
     { memberKey: 'satish', image: satishBansode },
-    { memberKey: 'poonam', image: staffPlaceholder },
+    { memberKey: 'poonam', image: poonamYadav },
     { memberKey: 'rakhi', image: rakhiMalvankar },
     { memberKey: 'sakshi', image: sakshiBandivadekar },
     { memberKey: 'akshay', image: akshaySatardekar },

@@ -89,7 +89,7 @@ export const translations = {
           experience: '',
         },
         sukhadha: {
-          name: 'SUKHADHA KHANOLKAR',
+          name: 'SUKHADHA PRABHU KHANOLKAR',
           role: 'Assistant Teacher',
           qualifications: '',
           experience: '',
@@ -177,7 +177,7 @@ export const translations = {
       contact: 'संपर्क',
     },
     hero: {
-      schoolName: 'मोहनराव परुलेकर प्राथमिक शाळा',
+      schoolName: 'मोहनराव परूळेकर प्राथमिक शाळा',
       tagline: 'प्रत्येक तरुण अन्वेषकासाठी मजेदार, आकर्षक आणि वास्तविक जीवनातील शिकण्याचे अनुभव',
       learnMore: 'अधिक जाणून घ्या',
       badge1: 'वी-कोविड-क्लाउड आवश्यक',
@@ -257,7 +257,7 @@ export const translations = {
           experience: '',
         },
         sukhadha: {
-          name: 'सुखदा खानोलकर',
+          name: 'सुखदा प्रभू खानोलकर',
           role: 'सहाय्यक शिक्षक',
           qualifications: '',
           experience: '',
@@ -329,7 +329,7 @@ export const translations = {
       newsletter: 'नवीनतम अद्यतने आणि घोषणांसाठी आमच्या वृत्तपत्राची सदस्यता घ्या',
       emailPlaceholder: 'तुमचा ईमेल',
       subscribe: 'सदस्यता घ्या',
-      copyright: 'मोहनराव परुलेकर प्राथमिक शाळा. सर्व हक्क राखीव.',
+      copyright: 'मोहनराव परूळेकर प्राथमिक शाळा. सर्व हक्क राखीव.',
       privacy: 'गोपनीयता धोरण',
       terms: 'सेवा अटी',
       cookies: 'कुकी धोरण',
